@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+</style>
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="TaskStyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="topnav" >
+    <a class="active" href=".\Taskp3.html">Home</a>
+    <a href=".\TaskCart.html" style="text-decoration: none;">Cart</a>
+    <a href=".\TaskAbout.html" style="text-decoration: none;">About</a>
+    <a href=".\TaskGallery.html" style="text-decoration: none;">Furniture Gallery</a>
+    <a href=".\TaskContact.html" style="text-decoration: none;">Contact us</a>
+    <div style="color: #fff;font-size: medium;font-weight: bold; float:left;
+  text-align: center;
+  padding: 12px 15%;"
+    id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+    
+  </div>
+
+  <br>
+
+
+<div id="section1" style="min-height: 660px ;">
+  <br>
+  <ul type="none" class="cards-list">
+
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+
+
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+
+
+    <li>
+      <div class="card">
+        <img src="img\room.jpg" alt="Denim Jeans" style="width:100%">
+        <h5>blue couch</h1>
+          <p class="price">$19.99</p>
+          <p><button>Add to Cart</button></p>
+      </div>
+    </li>
+   
+  </ul>
+
+  <h4>
+  <a href="#section2" style="margin-left: 40%;font-weight: bold;">Click to see our fancy furniture from a video⬇️</a>
+</h4>
+<br>
+<br>
+  </div>
+
+  
+  <div class="main" id="section2" style="min-height: 500px ;">
+           <!-- <div style=""  onload="myClock()">
+    <div id="clockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div> -->
+
+   <center>
+    <video  height="550"   autoplay controls >
+      <source src="img\Modern_Furniture.mp4" type="video/mp4">
+
+    </video>
+    </center>
+
+  
+ 
+  </div>
+   
+
+    <br>
+
+    <h4>
+    <a href="#section1"  style="margin-left: 50%;font-weight: bold;">Click to back to home⬆️</a>
+  </h4>
+  </div>
+  </body>
+
+
+<script>
+
+function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
+
+</script>
+
+
+</html>

@@ -1,0 +1,419 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.active {
+  background-color: #A7AABD;
+  pointer-events: none;
+
+}
+
+input[type=text], input[type=password] {
+  width: 95%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+form{
+  padding: 40px;
+}
+.button {
+  background-color:#ddd;
+  color: rgb(22, 22, 22);
+  padding: 16px 20px;
+  margin: 8px ;
+  width: 50%;
+  opacity: 1;
+  border-radius: 10px;
+  border: #ddd;
+  font-size: medium;
+}
+
+.button:hover {
+  opacity:0.8;
+  
+}
+
+a {
+  color:#e3ddd4 ;
+}
+label{
+    color: #fff;
+   font-size:large;
+}
+h1,h3{
+  color: #fff;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+
+
+}
+
+.left {
+  left: 0;
+ bottom: 0;
+  background-image: url(img/room.jpg) ;
+  background-size:cover;
+
+}
+
+
+.right {
+  right: 0;
+  background-color:#3B5998
+}
+/* p2 */
+
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius:70% ;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #8497c1;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+/* p3 */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 170px;
+  text-align: center;
+  background-color: #3B5998;
+  color:#fff;
+}
+
+.price {
+  color: rgb(194, 194, 194);
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  padding: 5px;
+  color: white;
+  background-color: #728BCF;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.cards-list li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.topnav {
+  background-color: #3B5998;
+  overflow: hidden;
+  /* margin-top: -8px; */
+  height: 10%;
+}
+
+.topnav a {
+  float:left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  font-size: 17px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.pagination{
+  position: absolute; 
+  bottom: 0;
+}
+/* contact */
+select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* textarea:focus{    
+  background-color:#728BCF
+} */
+
+input[type=submit] {
+  background-color: #3B5998;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  opacity: .8;
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+
+}
+.column label,h2{
+  color:#3B5998;
+  font-weight: bold
+
+
+}
+
+/* gallery */
+
+.container{
+  position: relative;
+  min-height: 100vh;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.container .search-box{
+  position: relative;
+  height: 42px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+
+.container .images .image-box{
+  position: relative;
+  height: 300px;
+  width: 210px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 8px;
+}
+.images{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+
+
+.images .image-box img{
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.2s linear;
+
+}
+
+.image-box h6{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bolder;
+  color: rgb(29, 10, 10);
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+
+/* bonus */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* text */
+
+.typing-demo {
+  width: 37ch;
+  animation: typing 8s steps(37), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  margin-left: 2px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ffffff;
+  
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: rgb(91, 90, 90);
+  --stroke-color: rgb(91, 90, 90);
+  
+  text-shadow: 
+    
+    var(--x-offset)
+    var(--y-offset)
+    0px
+    var(--background-color), 
+    
+    calc( var(--x-offset) - var(--stroke) )
+    calc( var(--y-offset) + var(--stroke) )
+    0px
+    var(--stroke-color);
+  
+}
+@supports ( text-shadow: 1px 1px 1px 1px black ) {
+  h1 {
+    text-shadow:
+      
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      0px
+      var(--background-color), 
+      
+      var(--x-offset) 
+      var(--y-offset)
+      var(--stroke)
+      0px
+      var(--stroke-color);
+    
+  }
+}
+/* clock */
+
+        #clockContainer {
+            /* adding a clock frame */
+            background: url('https://vidyasheela.com/web-contents/website-components/Analog-Clocks/simple-analog-clock/clock.png') no-repeat;
+            position: relative;
+            height: 10vw;
+            width: 10vw;
+            background-size: 100%;
+            margin: auto;
+        }
+        
+        #hour {
+            position: absolute;
+            background: black;
+            border-radius: 25px;
+            transform-origin: bottom;
+            width: 1.8%;
+            height: 25%;
+            top: 25%;
+            left: 48.85%;
+        }
+        /* similar is for the minute and second hand */
+        
+        #minute {
+            position: absolute;
+            background: black;
+            border-radius: 25px;
+            transform-origin: bottom;
+            width: 1.6%;
+            height: 30%;
+            top: 19%;
+            left: 48.9%;
+        }
+        
+        #second {
+            position: absolute;
+            background: black;
+            border-radius: 25px;
+            transform-origin: bottom;
+            width: 1%;
+            height: 40%;
+            top: 9%;
+            left: 49.25%;
+        }
+    

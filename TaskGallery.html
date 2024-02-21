@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="TaskStyle.css" />
+    <title>Image Gallery with Search Box</title>
+    <style>
+      .container h6 {
+        color: rgb(241, 227, 227);
+        background-color: #3b5998;
+        padding: 3px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="topnav"
+      style="width: 101%; margin-left: -8px; margin-top: -8px; height: 48px"
+    >
+      <a style="padding: 14px" href=".\Taskp3.html">Home</a>
+      <a style="padding: 14px" href=".\TaskCart.html">Cart</a>
+      <a style="padding: 14px" href=".\TaskAbout.html">About</a>
+      <a style="padding: 14px" class="active" href=".\TaskGallery.html"
+        >Furniture Gallery</a
+      >
+      <a style="padding: 14px" href=".\TaskContact.html">Contact us</a>
+    </div>
+    <div class="container">
+      <center><h2>Furniture Gallery</h2></center>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search a furniture" />
+      </div>
+      <div class="images">
+        <div class="image-box" data-name="room">
+          <img src="img/room.jpg" alt="" />
+          <h6>room</h6>
+        </div>
+
+        <div class="image-box" data-name="modern room">
+          <img src="img/room1.jpg" alt="" />
+          <h6>modern room</h6>
+        </div>
+
+        <div class="image-box" data-name="bed">
+          <img src="img/bed.jpg" alt="" />
+          <h6>bed</h6>
+        </div>
+        <div class="image-box" data-name="chair">
+          <img src="img/chair.png" alt="" />
+          <h6>chair</h6>
+        </div>
+
+        <div class="image-box" data-name="couch">
+          <img src="img/couch.jpg" alt="" />
+          <h6>couch</h6>
+        </div>
+
+        <div class="image-box" data-name="pink chair">
+          <img src="img/pink_chair.jpg" alt="" />
+          <h6>pink chair</h6>
+        </div>
+        <div class="image-box" data-name="round chair">
+          <img src="img/round_chair.jpg" alt="" />
+          <h6>round chair</h6>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

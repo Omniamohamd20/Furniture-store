@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="TaskStyle.css" />
+  </head>
+
+  <body>
+    <div class="split left"></div>
+
+    <div class="split right">
+      <form action=".\Taskp3.html">
+        <div class="container">
+          <h1>Welcome..</h1>
+
+          <br />
+          <label for="text"><b>Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            name="email"
+            id="email"
+            required
+          />
+
+          <label for="email"><b>Email</b></label>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            name="email"
+            id="email"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            onchange="checkpass()"
+            class="psw"
+            placeholder="confirm password"
+            id="psw"
+            name="psw"
+            required
+          />
+          <span class="span"></span>
+          <br />
+          <br />
+          <label for="psw-repeat"><b>Confirm Password</b></label>
+          <input
+            type="password"
+            placeholder="confirm Password"
+            name="psw-repeat"
+            id="psw-repeat"
+            required
+            onkeyup="check_confirm_pass();"
+          />
+          <span id="msg"></span>
+
+          <center>
+            <br />
+            <button
+              type="submit"
+              class="button"
+              onclick=""
+              required
+              style="width: 30%"
+            >
+              Register
+            </button>
+            <br />
+            <a href="Taskp2.html"> already have an account..</a>
+          </center>
+        </div>
+      </form>
+    </div>
+    <script>
+      let pass = document.querySelector(".container .psw");
+      let printStrength = document.querySelector(".container .span");
+      let lower = /[a-z]/g;
+      let upper = /[A-Z]/g;
+      let nums = /[0-9]/g;
+      let char = /[!@#$%^&*]/g;
+      function checkpass() {
+        console.log(pass.value);
+        let weak = false,
+          med = false,
+          strong = false;
+        if (pass.value.match(lower)) {
+          weak = true;
+        }
+        if (
+          pass.value.match(lower) &&
+          pass.value.match(upper) &&
+          pass.value.match(nums)
+        ) {
+          weak = true;
+          med = true;
+        }
+        if (
+          pass.value.match(lower) &&
+          pass.value.match(upper) &&
+          pass.value.match(nums) &&
+          pass.value.match(char)
+        ) {
+          weak = true;
+          med = true;
+          strong = true;
+        }
+        if (weak && med && strong) {
+          printStrength.innerHTML = "Strong password";
+          printStrength.style.color = "green";
+        } else if (weak && med) {
+          printStrength.innerHTML = "Meduim Password";
+          printStrength.style.color = "yellow";
+        } else if (weak) {
+          printStrength.innerHTML = "week Password ";
+          printStrength.style.color = "red";
+        }
+      }
+    </script>
+
+    <script>
+      var check_confirm_pass = function () {
+        if (
+          document.getElementById("psw").value ==
+          document.getElementById("psw-repeat").value
+        ) {
+          document.getElementById("msg").style.color = "";
+          document.getElementById("msg").innerHTML = "";
+        } else {
+          document.getElementById("msg").style.color = "red";
+          document.getElementById("msg").innerHTML = "not matching";
+        }
+      };
+    </script>
+  </body>
+</html>
